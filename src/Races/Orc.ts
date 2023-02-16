@@ -3,13 +3,10 @@ import Race from './Race';
 class Orc extends Race {
   private _maxLifePoints: number;
   private static _countOrc = 0;
-  constructor(
-    name: string,
-    dexterity: number,
-  ) {
+  constructor(name: string, dexterity: number) {
     super(name, dexterity);
     this._maxLifePoints = 74;
-    Orc.incrementOrcCount();
+    Orc._countOrc += 1;
   }
 
   get maxLifePoints(): number {
@@ -18,10 +15,6 @@ class Orc extends Race {
 
   static createdRacesInstances(): number {
     return Orc._countOrc;
-  }
-
-  static incrementOrcCount(): void {
-    Orc._countOrc += 1;
   }
 }
 

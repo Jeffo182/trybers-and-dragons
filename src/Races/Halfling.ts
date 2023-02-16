@@ -3,13 +3,10 @@ import Race from './Race';
 class Halfling extends Race {
   private _maxLifePoints: number;
   private static _countHalfling = 0;
-  constructor(
-    name: string,
-    dexterity: number,
-  ) {
+  constructor(name: string, dexterity: number) {
     super(name, dexterity);
     this._maxLifePoints = 60;
-    Halfling.incrementHalflingCount();
+    Halfling._countHalfling += 1;
   }
 
   get maxLifePoints(): number {
@@ -18,10 +15,6 @@ class Halfling extends Race {
 
   static createdRacesInstances(): number {
     return Halfling._countHalfling;
-  }
-
-  static incrementHalflingCount(): void {
-    Halfling._countHalfling += 1;
   }
 }
 
