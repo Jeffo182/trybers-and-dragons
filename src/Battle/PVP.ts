@@ -1,0 +1,21 @@
+import Fighter from '../Fighter';
+import Battle from './Battle';
+
+class PVP extends Battle {
+  constructor(player1: Fighter, private _player2: Fighter) {
+    super(player1);
+  }
+
+  fight(): number {
+    let battle = true;
+    while (battle) {
+      this.player.attack(this._player2);
+      if (this.player.lifePoints === -1) battle = false;
+      this._player2.attack(this.player);
+      if (this._player2.lifePoints === -1) battle = false;
+    }
+    return super.fight();
+  }
+}
+
+export default PVP;
