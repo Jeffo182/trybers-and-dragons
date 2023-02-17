@@ -1,13 +1,18 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+# Boas vindas ao repositório do projeto Trybers and Dragons!
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+Para este projeto, foram aplicados os princípios da arquitetura SOLID e os princípios de POO em uma estrutura de jogos de interpretação de papéis, mais conhecidos como jogos RPG (Role Playing Game).
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+
+
+
+
+## Rodar com Docker
+
+Rode o serviço node com o comando docker-compose up -d.
+
+Esse serviço irá inicializar um container chamado trybers_and_dragons.
+A partir daqui você pode rodar o container trybers_and_dragons via CLI ou abri-lo no VS Code.
+Use o comando docker exec -it trybers_and_dragons bash.
+
+Ele te dará acesso ao terminal interativo do container criado pelo compose, que está rodando em segundo plano.
+Instale as dependências com npm install :)
